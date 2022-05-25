@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+@font-face {
+  font-family: "Verve Font";
+  src: url("../fonts/Verve-nnjJ.ttf") format("truetype");
+}
+
+body {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  background-image: url(../image/red-outer-space-darkness-Favim.com-7061382.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.portal {
+  width: 4vw;
+  animation: animationDivPortal 12s linear;
+  opacity: 0;
+}
+
+#portal {
+  width: 4vw;
+  animation: animationPortal 12s linear;
+  opacity: 0;
+}
+
+.doutor {
+  width: 25vw;
+  top: 1vh;
+  position: absolute;
+  animation: animationDoutor 12s linear;
+  opacity: 1;
+}
+
+#doutor {
+  width: 25vw;
+  top: 1vh;
+  animation: animationDoutor 12s linear;
+  opacity: 1;
+}
+
+.texto {
+  width: 40vw;
+  height: 40vh;
+  bottom: 5vh;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 1;
+  animation: animationMarvel 12s linear;
+}
+
+#marvel {
+  width: 20%;
+  margin-bottom: 10px;
+}
+
+#textoDoutor {
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+#no {
+  width: 80%;
+  margin-bottom: 15px;
+}
+
+#multiverso {
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+#texto-data {
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+@keyframes animationPortal {
+  0% {
+    width: 0vw;
+    transform: rotate(0deg);
+    opacity: 0.2;
+  }
+  10% {
+    width: 4vw;
+    transform: rotate(100deg);
+    opacity: 0.5;
+  }
+  20% {
+    width: 8vw;
+    transform: rotate(200deg);
+    opacity: 0.5;
+  }
+  30% {
+    width: 12vw;
+    transform: rotate(300deg);
+    opacity: 0.5;
+  }
+  40% {
+    width: 16vw;
+    transform: rotate(400deg);
+    opacity: 0.7;
+  }
+  50% {
+    width: 20vw;
+    transform: rotate(500deg);
+    opacity: 1;
+  }
+  60% {
+    width: 24vw;
+    transform: rotate(600deg);
+    opacity: 1;
+  }
+  70% {
+    width: 28vw;
+    transform: rotate(700deg);
+    opacity: 1;
+  }
+  80% {
+    width: 30vw;
+    transform: rotate(800deg);
+    opacity: 0.7;
+  }
+  90% {
+    width: 32vw;
+    transform: rotate(900deg);
+    opacity: 0.3;
+  }
+  100% {
+    width: 34vw;
+    transform: rotate(1000deg);
+    opacity: 0;
+  }
+}
+
+@keyframes animationDivPortal {
+  0% {
+    width: 4vw;
+    opacity: 0.2;
+  }
+  10% {
+    width: 4vw;
+    opacity: 0.5;
+  }
+  20% {
+    width: 8vw;
+    opacity: 0.5;
+  }
+  30% {
+    width: 12vw;
+    opacity: 0.5;
+  }
+  40% {
+    width: 16vw;
+    opacity: 0.7;
+  }
+  50% {
+    width: 20vw;
+    opacity: 1;
+  }
+  60% {
+    width: 24vw;
+    opacity: 1;
+  }
+  70% {
+    width: 28vw;
+    opacity: 1;
+  }
+  80% {
+    width: 30vw;
+    opacity: 1;
+  }
+  90% {
+    width: 32vw;
+    opacity: 0.5;
+  }
+  100% {
+    width: 34vw;
+    opacity: 1;
+  }
+}
+
+@keyframes animationDoutor {
+  0% {
+    top: 40vh;
+    width: 5vw;
+    opacity: 0;
+  }
+  49% {
+    top: 40vh;
+    width: 7.5vw;
+    opacity: 0.2;
+  }
+  50% {
+    top: 36vh;
+    width: 10vw;
+    opacity: 0.4;
+  }
+  60% {
+    top: 32vh;
+    width: 12.5vw;
+    opacity: 0.6;
+  }
+  70% {
+    top: 28vh;
+    width: 15vw;
+    opacity: 0.8;
+  }
+  75% {
+    top: 24vh;
+    width: 17.5vw;
+    opacity: 0.9;
+  }
+  80% {
+    top: 20vh;
+    width: 20vw;
+    opacity: 1;
+  }
+  85% {
+    top: 16vh;
+    width: 22.5vw;
+    opacity: 1;
+  }
+  90% {
+    width: 25vw;
+    opacity: 1;
+    bottom: 20vh;
+  }
+  95% {
+    width: 25vw;
+    opacity: 1;
+    bottom: 30vh;
+  }
+  100% {
+    width: 25vw;
+    opacity: 1;
+    bottom: 40vh;
+  }
+}
+
+@keyframes animationMarvel {
+  0% {
+    width: 15vw;
+    height: 15vh;
+    bottom: 15vh;
+    opacity: 0;
+  }
+  79% {
+    width: 25vw;
+    height: 25vh;
+    bottom: 12vh;
+    opacity: 0;
+  }
+  80% {
+    width: 25vw;
+    height: 25vh;
+    bottom: 12vh;
+    opacity: 0.25;
+  }
+  85% {
+    width: 30vw;
+    height: 30vh;
+    bottom: 10vh;
+    opacity: 0.5;
+  }
+
+  90% {
+    width: 35vw;
+    height: 35vh;
+    bottom: 7vh;
+    opacity: 0.75;
+  }
+  100% {
+    width: 40vw;
+    height: 40vh;
+    bottom: 5vh;
+    opacity: 1;
+  }
+}
